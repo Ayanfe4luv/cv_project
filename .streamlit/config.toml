@@ -1,20 +1,19 @@
 [theme]
-# Hybrid Professional Palette (AI Trainer / Teacher)
-# Deep Indigo: Intelligent, modern, and trustworthy.
-primaryColor = "#4F46E5"
+# Matches the CSS "--accent-color" (Pink/Magenta)
+primaryColor = "#d33682"
 
-# Pure White: Maximum clarity for reading text.
+# Pure White: Matches CSS "--bg-primary"
 backgroundColor = "#ffffff"
 
-# Pale Cool Gray: Subtle separation for the sidebar.
-secondaryBackgroundColor = "#F3F4F6"
+# Light Grey: Matches CSS "--bg-secondary"
+secondaryBackgroundColor = "#f3f4f6"
 
-# Deep Charcoal: Softer on the eyes than pure black text.
-textColor = "#1f2937"
+# Dark Blue/Grey: Matches CSS "--primary-color" (Text)
+textColor = "#2c3e50"
 
 font = "sans serif"
 
-# --- Production Settings ---
+# --- Production Settings (These are excellent) ---
 [server]
 headless = true
 enableCORS = false
@@ -25,5 +24,4 @@ gatherUsageStats = false
 
 [client]
 showErrorDetails = false
-toolbarMode = "minimal"
-
+toolbarMode = "viewer"  # Changed from "minimal" to "viewer" to hide the hamburger menu cleanly if desired

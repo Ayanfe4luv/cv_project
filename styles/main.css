@@ -1,27 +1,250 @@
-@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&display=swap');
+/* * Modern Digital CV Styles
+ * Ayanfeoluwa Alabetutu - Two-Column Layout
+ */
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
-* {font-family: 'Readex Pro';}
-
-
-a {
-    text-decoration: none;
-    color: white !important;
-    font-weight: 500;
+/* ===== ROOT VARIABLES ===== */
+:root {
+    --primary-color: #2c3e50;       /* Dark text */
+    --accent-color: #d33682;        /* Your Pink/Magenta */
+    --accent-light: #fdf2f8;        /* Light pink bg */
+    --text-secondary: #6b7280;      /* Grey text */
+    --bg-secondary: #f3f4f6;        /* Sidebar grey */
 }
 
-a:hover {
-    color: #d33682 !important;
-    text-decoration: none;
+/* ===== GLOBAL SETTINGS ===== */
+* {
+    font-family: 'Readex Pro', sans-serif !important;
 }
 
-ul {list-style-type: none;}
-
-hr {
-    margin-top: 0px;
-    margin-bottom: 5%;
-}
-
+/* Hide Streamlit Default Elements */
 #MainMenu {visibility: hidden;}
 footer {visibility: hidden;}
 header {visibility: hidden;}
+
+/* Adjust Main Container Padding */
+.block-container {
+    padding-top: 2rem !important;
+    padding-bottom: 5rem !important;
+    max-width: 1200px !important;
+}
+
+/* ===== LINKS ===== */
+a {
+    text-decoration: none;
+    color: var(--primary-color) !important;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--accent-color) !important;
+    text-decoration: none;
+}
+
+/* ===== TYPOGRAPHY ===== */
+h1 {
+    font-weight: 700 !important;
+    color: var(--primary-color) !important;
+    font-size: 2rem !important;
+    text-align: center;
+    margin-bottom: 0.5rem !important;
+}
+
+h2 {
+    font-size: 1.2rem !important;
+    font-weight: 600 !important;
+    margin-top: 1.5rem !important;
+    margin-bottom: 1rem !important;
+    color: var(--primary-color) !important;
+}
+
+p, li, span, div {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    line-height: 1.5;
+}
+
+hr {
+    margin: 1.5rem 0 !important;
+    border-color: #e5e7eb;
+}
+
+/* ===== COMPONENT: PROFILE IMAGE ===== */
+.profile-img-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.profile-img-container img {
+    border-radius: 50%;
+    border: 3px solid white;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.profile-img-container img:hover {
+    transform: scale(1.05);
+    border-color: var(--accent-color);
+}
+
+/* ===== COMPONENT: CONTACT INFO ===== */
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+    color: var(--primary-color);
+}
+
+.contact-icon {
+    color: var(--accent-color);
+    font-size: 1.1rem;
+}
+
+/* ===== COMPONENT: QUALITY BUBBLES ===== */
+.qualities-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.quality-bubble {
+    padding: 8px 16px;
+    border-radius: 20px;
+    border: 1px solid var(--accent-color);
+    color: var(--primary-color);
+    font-size: 0.85rem;
+    font-weight: 500;
+    background: white;
+    transition: all 0.3s ease;
+    cursor: default;
+}
+
+.quality-bubble:hover {
+    background: var(--accent-color);
+    color: white !important;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(211, 54, 130, 0.3);
+}
+
+/* ===== COMPONENT: SKILL BARS ===== */
+.skill-container {
+    margin-bottom: 15px;
+}
+
+.skill-label {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 4px;
+    color: var(--primary-color);
+}
+
+.progress-bg {
+    width: 100%;
+    height: 6px;
+    background-color: #e5e7eb;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background-color: var(--text-secondary); /* Default grey */
+    border-radius: 3px;
+    transition: width 1s ease, background-color 0.3s ease;
+}
+
+.skill-container:hover .progress-fill {
+    background-color: var(--accent-color); /* Turns pink on hover */
+}
+
+/* ===== COMPONENT: TIMELINE (WORK EX) ===== */
+.section-line {
+    width: 60px;
+    height: 4px;
+    background-color: var(--accent-color);
+    margin-bottom: 1.5rem;
+    border-radius: 2px;
+}
+
+.timeline-block {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 25px;
+    border-left: 2px solid #e5e7eb;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: -6px;
+    top: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--accent-color);
+    box-shadow: 0 0 0 4px white;
+}
+
+.role-title {
+    font-weight: 700;
+    color: var(--primary-color);
+    font-size: 1rem;
+    line-height: 1.2;
+}
+
+.company-name {
+    font-weight: 600;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+}
+
+.date-range {
+    font-size: 0.8rem;
+    color: var(--accent-color);
+    font-weight: 700;
+    float: right;
+    text-transform: uppercase;
+}
+
+/* ===== STREAMLIT BUTTONS (Downloads & Switcher) ===== */
+
+/* Language Switcher (Top Right) */
+div[data-testid="column"] .stButton > button {
+    border: 1px solid var(--accent-color);
+    color: var(--accent-color);
+    background: transparent;
+    padding: 0.2rem 0.5rem;
+    font-size: 0.8rem;
+}
+
+div[data-testid="column"] .stButton > button:hover {
+    background: var(--accent-color);
+    color: white;
+}
+
+/* Download Buttons (Sidebar) */
+.stDownloadButton > button {
+    width: 100%;
+    background-color: white;
+    color: var(--primary-color);
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+.stDownloadButton > button:hover {
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}

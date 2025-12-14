@@ -1,8 +1,6 @@
 """
 Bilingual Digital CV/Portfolio - Ayanfeoluwa Alabetutu
-Teacher | Translator | AI Trainer
-Russian (Primary) / English
-
+Layout: Two-Column Modern (Reference: image_37b51e.png)
 Author: Ayanfeoluwa Alabetutu
 """
 
@@ -22,279 +20,121 @@ profile_pic_path = assets_dir / "profile-pic.png"
 CONTENT = {
     "ru": {
         "page_title": "Резюме | Аянфеолува Алабетуту",
-        "page_icon": "👨‍🏫",
         "name": "Аянфеолува Алабетуту",
-        "title": "Преподаватель | Переводчик | AI-специалист",
+        "title": "Преподаватель | AI-специалист",
+        "profile_header": "О себе",
         "description": """
-        Целеустремленный специалист с 9+ годами опыта в преподавании английского языка 
-        и 3+ годами в переводческой деятельности. Эксперт в области AI/LLM с опытом 
-        промпт-инжиниринга и создания датасетов для обучения нейросетей.
+        Целеустремленный специалист с 9+ годами опыта в преподавании и 3+ годами в переводах. 
+        Эксперт в области AI/LLM, специализирующийся на промпт-инжиниринге и создании датасетов. 
+        Обладаю навыками построения предиктивных моделей и ML-алгоритмов.
         """,
         "email": "ayanfe4luv@gmail.com",
         "phone": "+7 (987) 509-98-18",
-        "location": "📍 Новосибирск, Россия",
-        "download_cv": "📄 Скачать резюме (RU)",
-        "download_cv_en": "📄 Download CV (EN)",
-        "social_header": "Социальные сети",
-        "qualifications_header": "Ключевые квалификации",
-        "qualifications": [
-            "✓ **Английский язык: C2 (носитель)** — подтверждён сертификатом TEFL",
-            "✓ **Опыт письменного перевода: 3+ года** — EN↔RU, EN→FR",
-            "✓ **Опыт работы с AI/LLM: 2+ года** — промпт-инжиниринг, датасеты",
-            "✓ **Научные публикации** на русском и английском языках",
-        ],
-        "experience_header": "Опыт работы",
-        "skills_header": "Навыки",
+        "location": "Новосибирск, Россия",
+        "qualities_header": "Ключевые качества",
+        "qualities_bubbles": ["C2 English", "AI/LLM", "Translator", "Researcher"],
+        "work_header": "Опыт работы",
         "education_header": "Образование",
-        "certifications_header": "Сертификаты",
-        "contact_header": "Контакты",
-        "ai_experience_header": "🤖 Опыт работы с AI и нейросетями",
-        "translation_header": "🌐 Переводческая деятельность",
-        "teaching_header": "👨‍🏫 Педагогический опыт",
+        "skills_header": "Навыки",
         "experience": [
             {
+                "role": "AI Specialist & Content Dev",
                 "company": "UREKA Biotec | Omicslogic Africa",
-                "role": "AI-специалист | Разработчик контент-пайплайнов",
-                "period": "2024 — настоящее время",
-                "tasks": [
-                    "Разработка многоступенчатых LLM-пайплайнов для генерации контента",
-                    "Промпт-инжиниринг и API-оркестрация для обучения нейросетей",
-                    "Создание датасетов для машинного перевода и генерации текстов",
-                    "Оценка и редактирование AI-генераций — контроль качества",
-                ],
+                "period": "2024 — Наст. время",
+                "desc": "Разработка LLM-пайплайнов, промпт-инжиниринг и создание датасетов."
             },
             {
-                "company": "SKRIND Biotec (R&D)",
-                "role": "Data Scientist",
-                "period": "Январь 2023 — Май 2025",
-                "tasks": [
-                    "Построение предиктивных моделей и алгоритмов ML",
-                    "Применение компьютерного зрения для анализа данных",
-                    "Автоматизация процессов сбора и обработки данных",
-                ],
+                "role": "Data Scientist (R&D)",
+                "company": "SKRIND Biotec",
+                "period": "2023 — 2025",
+                "desc": "ML-алгоритмы, компьютерное зрение и автоматизация сбора данных."
             },
             {
-                "company": "Фриланс-переводчик",
-                "role": "Переводчик EN↔RU, EN→FR",
-                "period": "Июнь 2022 — настоящее время",
-                "tasks": [
-                    "500+ страниц научных и медицинских текстов",
-                    "200+ страниц технической документации (IT, Data Science)",
-                    "100+ страниц образовательных материалов",
-                ],
-            },
-        ],
-        "teaching_experience": [
-            {
-                "school": "Школа 21, Новосибирск",
                 "role": "Преподаватель английского",
-                "period": "2024 — настоящее время",
-            },
-            {
-                "school": "НГПУ",
-                "role": "Преподаватель биоинформатики",
-                "period": "2024 — 2025",
-            },
-            {
-                "school": "Муниципальная школа №5",
-                "role": "Преподаватель английского",
-                "period": "2023 — 2024",
-            },
-            {
-                "school": "НГУЭУ",
-                "role": "Преподаватель для студентов",
-                "period": "2022 — 2023",
-            },
-            {
-                "school": "Rostum Academy, GO! English, Heathrow Schools",
-                "role": "Преподаватель английского",
-                "period": "2016 — 2021",
+                "company": "Школа 21, НГПУ, Муниципальные школы",
+                "period": "2016 — Наст. время",
+                "desc": "Обучение студентов и специалистов, подготовка к экзаменам."
             },
         ],
         "education": [
             {
-                "degree": "Кандидат наук (в процессе)",
-                "school": "ФИЦ ФТМ, НИИ Вирусологии, Новосибирск",
-                "year": "2027 (ожидается)",
-            },
-            {
-                "degree": "Data Science",
-                "school": "WorldQuant University, США",
-                "year": "2022",
-            },
-            {
-                "degree": "Магистр молекулярной биологии и генетики",
-                "school": "Пензенский гос. университет",
-                "year": "2018",
-            },
-            {
-                "degree": "Бакалавр микробиологии",
-                "school": "Университет Лагоса, Нигерия",
-                "year": "2014",
-            },
-        ],
-        "certifications": [
-            "Professional TEFL Certificate (2023) — уровень C2",
-            "Microsoft Certified Educator (2020)",
-            "365 Data Science Program",
-            "H3ABioNet Pan-African Bioinformatics Training",
-        ],
-        "languages": {
-            "header": "Языки",
-            "items": ["🇬🇧 Английский — C2 (носитель)", "🇷🇺 Русский — свободно", "🇫🇷 Французский — хороший уровень"],
-        },
-        "tech_skills": {
-            "header": "Технические навыки",
-            "items": [
-                "💻 **Программирование:** Python, R, SQL, Perl, Bash",
-                "🤖 **AI/ML:** LLMs, Промпт-инжиниринг, NLP, Computer Vision",
-                "📊 **Инструменты:** Linux, Streamlit, Translation SDKs",
-            ],
-        },
-        "additional_header": "Дополнительная информация",
-        "additional_info": [
-            "🌍 **Гражданство:** Россия и Нигерия",
-            "💼 **Готовность:** Удалённая работа, гибкий график",
-            "🖥️ **Оборудование:** Windows 11, интернет 100+ Мбит/с",
-        ],
-    },
-    "en": {
-        "page_title": "CV | Ayanfeoluwa Alabetutu",
-        "page_icon": "👨‍🏫",
-        "name": "Ayanfeoluwa Alabetutu",
-        "title": "Teacher | Translator | AI Trainer",
-        "description": """
-        Purpose-driven professional with 9+ years of English teaching experience 
-        and 3+ years in translation services. Expert in AI/LLM with hands-on experience 
-        in prompt engineering and dataset creation for neural network training.
-        """,
-        "email": "ayanfe4luv@gmail.com",
-        "phone": "+7 (987) 509-98-18",
-        "location": "📍 Novosibirsk, Russia",
-        "download_cv": "📄 Download CV (EN)",
-        "download_cv_en": "📄 Скачать резюме (RU)",
-        "social_header": "Social Media",
-        "qualifications_header": "Key Qualifications",
-        "qualifications": [
-            "✓ **English: C2 (Native Speaker)** — TEFL Certified",
-            "✓ **Translation Experience: 3+ Years** — EN↔RU, EN→FR",
-            "✓ **AI/LLM Experience: 2+ Years** — Prompt Engineering, Datasets",
-            "✓ **Scientific Publications** in Russian and English",
-        ],
-        "experience_header": "Work Experience",
-        "skills_header": "Skills",
-        "education_header": "Education",
-        "certifications_header": "Certifications",
-        "contact_header": "Contact",
-        "ai_experience_header": "🤖 AI & Neural Network Experience",
-        "translation_header": "🌐 Translation Experience",
-        "teaching_header": "👨‍🏫 Teaching Experience",
-        "experience": [
-            {
-                "company": "UREKA Biotec | Omicslogic Africa",
-                "role": "AI Specialist | Content Pipeline Developer",
-                "period": "2024 — Present",
-                "tasks": [
-                    "Developed multi-stage LLM pipelines for personalized content generation",
-                    "Prompt engineering and API orchestration for neural network training",
-                    "Dataset creation for machine translation and text generation systems",
-                    "Evaluating and editing AI-generated outputs — quality control",
-                ],
-            },
-            {
-                "company": "SKRIND Biotec (R&D)",
-                "role": "Data Scientist",
-                "period": "January 2023 — May 2025",
-                "tasks": [
-                    "Built predictive models and ML algorithms",
-                    "Applied computer vision for data analysis",
-                    "Automated data collection and processing workflows",
-                ],
-            },
-            {
-                "company": "Freelance Translator",
-                "role": "Translator EN↔RU, EN→FR",
-                "period": "June 2022 — Present",
-                "tasks": [
-                    "500+ pages of scientific and medical texts",
-                    "200+ pages of technical documentation (IT, Data Science)",
-                    "100+ pages of educational materials",
-                ],
-            },
-        ],
-        "teaching_experience": [
-            {
-                "school": "School 21, Novosibirsk",
-                "role": "English Teacher",
-                "period": "2024 — Present",
-            },
-            {
-                "school": "NSPU",
-                "role": "Bioinformatics Instructor",
-                "period": "2024 — 2025",
-            },
-            {
-                "school": "Municipal School No. 5",
-                "role": "English Teacher",
-                "period": "2023 — 2024",
-            },
-            {
-                "school": "NSUEM",
-                "role": "English Instructor",
-                "period": "2022 — 2023",
-            },
-            {
-                "school": "Rostum Academy, GO! English, Heathrow Schools",
-                "role": "English Teacher",
-                "period": "2016 — 2021",
-            },
-        ],
-        "education": [
-            {
-                "degree": "Ph.D. Candidate (In Progress)",
-                "school": "FRC FTM, Institute of Virology, Novosibirsk",
-                "year": "Expected 2027",
+                "degree": "Ph.D. Кандидат наук",
+                "school": "ФИЦ ФТМ, Новосибирск",
+                "year": "2027 (Ожидается)"
             },
             {
                 "degree": "Data Science",
                 "school": "WorldQuant University, USA",
-                "year": "2022",
+                "year": "2022"
+            }
+        ],
+        "tech_skills": [
+            {"name": "Python / R / SQL", "level": 90},
+            {"name": "LLMs & Prompt Eng", "level": 95},
+            {"name": "Machine Learning", "level": 80},
+            {"name": "Translation (EN-RU)", "level": 100},
+        ],
+        "downloads_header": "Скачать резюме",
+        "contact_header": "Контакты"
+    },
+    "en": {
+        "page_title": "CV | Ayanfeoluwa Alabetutu",
+        "name": "Ayanfeoluwa Alabetutu",
+        "title": "Teacher | AI Trainer",
+        "profile_header": "Profile",
+        "description": """
+        Purpose-driven professional with 9+ years of teaching and 3+ years in translation. 
+        Expert in AI/LLM with hands-on experience in prompt engineering and dataset creation.
+        Skilled in building predictive models and ML algorithms.
+        """,
+        "email": "ayanfe4luv@gmail.com",
+        "phone": "+7 (987) 509-98-18",
+        "location": "Novosibirsk, Russia",
+        "qualities_header": "Key Qualities",
+        "qualities_bubbles": ["C2 English", "AI/LLM", "Translator", "Researcher"],
+        "work_header": "Work Experience",
+        "education_header": "Education",
+        "skills_header": "Skills",
+        "experience": [
+            {
+                "role": "AI Specialist & Content Dev",
+                "company": "UREKA Biotec | Omicslogic Africa",
+                "period": "2024 — Present",
+                "desc": "Developing LLM pipelines, prompt engineering, and dataset creation."
             },
             {
-                "degree": "M.Sc. in Molecular Biology and Genetics",
-                "school": "Penza State University",
-                "year": "2018",
+                "role": "Data Scientist (R&D)",
+                "company": "SKRIND Biotec",
+                "period": "2023 — 2025",
+                "desc": "Building ML algorithms, computer vision, and automating data workflows."
             },
             {
-                "degree": "B.Sc. in Microbiology",
-                "school": "University of Lagos, Nigeria",
-                "year": "2014",
+                "role": "English Teacher",
+                "company": "School 21, NSPU, Municipal Schools",
+                "period": "2016 — Present",
+                "desc": "Teaching students and professionals, exam preparation."
             },
         ],
-        "certifications": [
-            "Professional TEFL Certificate (2023) — C2 proficiency",
-            "Microsoft Certified Educator (2020)",
-            "365 Data Science Program",
-            "H3ABioNet Pan-African Bioinformatics Training",
+        "education": [
+            {
+                "degree": "Ph.D. Candidate",
+                "school": "FRC FTM, Novosibirsk",
+                "year": "Exp. 2027"
+            },
+            {
+                "degree": "Data Science",
+                "school": "WorldQuant University, USA",
+                "year": "2022"
+            }
         ],
-        "languages": {
-            "header": "Languages",
-            "items": ["🇬🇧 English — C2 (Native)", "🇷🇺 Russian — Fluent", "🇫🇷 French — Proficient"],
-        },
-        "tech_skills": {
-            "header": "Technical Skills",
-            "items": [
-                "💻 **Programming:** Python, R, SQL, Perl, Bash",
-                "🤖 **AI/ML:** LLMs, Prompt Engineering, NLP, Computer Vision",
-                "📊 **Tools:** Linux, Streamlit, Translation SDKs",
-            ],
-        },
-        "additional_header": "Additional Information",
-        "additional_info": [
-            "🌍 **Citizenship:** Russia & Nigeria",
-            "💼 **Availability:** Remote work, flexible schedule",
-            "🖥️ **Equipment:** Windows 11, 100+ Mbps internet",
+        "tech_skills": [
+            {"name": "Python / R / SQL", "level": 90},
+            {"name": "LLMs & Prompt Eng", "level": 95},
+            {"name": "Machine Learning", "level": 80},
+            {"name": "Translation (EN-RU)", "level": 100},
         ],
+        "downloads_header": "Download CV",
+        "contact_header": "Contact Info"
     },
 }
 
@@ -317,203 +157,178 @@ if css_file.exists():
     with open(css_file) as f:
         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
-# --- LANGUAGE SELECTION ---
+# --- HELPER: LANGUAGE ---
 if "lang" not in st.session_state:
-    st.session_state.lang = "ru"  # Default to Russian
-
+    st.session_state.lang = "ru"
 
 def switch_language():
     st.session_state.lang = "en" if st.session_state.lang == "ru" else "ru"
 
-
-# --- LANGUAGE SWITCHER IN TOP RIGHT ---
-col_spacer, col_lang = st.columns([6, 1])
-with col_lang:
-    current_lang = st.session_state.lang
-    lang_label = "🇬🇧 EN" if current_lang == "ru" else "🇷🇺 RU"
-    if st.button(lang_label, key="lang_switch", help="Switch language / Переключить язык"):
+# Top Right Language Switcher
+lang_col1, lang_col2 = st.columns([8, 1])
+with lang_col2:
+    if st.button("🇬🇧 / 🇷🇺", help="Switch Language"):
         switch_language()
         st.rerun()
 
-# Get current language content
-lang = st.session_state.lang
-content = CONTENT[lang]
+c = CONTENT[st.session_state.lang]
 
-# --- LOAD CV FILES ---
+# --- LOAD ASSETS ---
+profile_pic = None
+if profile_pic_path.exists():
+    profile_pic = Image.open(profile_pic_path)
+
+# Load PDF Files
+cv_ru_bytes = None
+cv_en_bytes = None
 try:
     with open(cv_ru_file, "rb") as f:
         cv_ru_bytes = f.read()
 except FileNotFoundError:
-    cv_ru_bytes = None
+    pass
 
 try:
     with open(cv_en_file, "rb") as f:
         cv_en_bytes = f.read()
 except FileNotFoundError:
-    cv_en_bytes = None
+    pass
 
-# --- LOAD PROFILE IMAGE ---
-profile_pic = None
-if profile_pic_path.exists():
-    try:
-        profile_pic = Image.open(profile_pic_path)
-    except Exception:
-        profile_pic = None
 
-# --- HERO SECTION ---
-st.markdown('<div class="hero-section">', unsafe_allow_html=True)
-col1, col2 = st.columns([1, 2], gap="large")
+# =================================================================
+# MAIN LAYOUT: 2 COLUMNS (Left Sidebar Look | Right Main Content)
+# =================================================================
 
-with col1:
+col_left, col_right = st.columns([1, 2.2], gap="large")
+
+# --- LEFT COLUMN (The "Sidebar" from the image) ---
+with col_left:
+    # 1. Profile Picture
     if profile_pic:
-        st.image(profile_pic, width=250)
-    else:
-        st.markdown(
-            """
-            <div style="width:200px;height:200px;background:linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            border-radius:50%;display:flex;align-items:center;justify-content:center;margin:auto;">
-            <span style="font-size:80px;">👨‍🏫</span>
-            </div>
-            """,
-            unsafe_allow_html=True,
-        )
+        st.markdown('<div class="profile-img-container">', unsafe_allow_html=True)
+        st.image(profile_pic, width=180)
+        st.markdown('</div>', unsafe_allow_html=True)
+    
+    # 2. Name & Title
+    st.markdown(f"<h1>{c['name']}</h1>", unsafe_allow_html=True)
+    st.markdown(f"<p style='text-align:center; font-weight:600; color:#d33682;'>{c['title']}</p>", unsafe_allow_html=True)
+    st.markdown("<hr>", unsafe_allow_html=True)
 
-with col2:
-    st.markdown(f"# {content['name']}")
-    st.markdown(f"### {content['title']}")
-    st.markdown(content["description"])
+    # 3. Contact Info
+    st.markdown(f"## {c['contact_header']}")
+    st.markdown(f"""
+    <div class="contact-item">
+        <span class="contact-icon">📍</span> {c['location']}
+    </div>
+    <div class="contact-item">
+        <span class="contact-icon">📧</span> {c['email']}
+    </div>
+    <div class="contact-item">
+        <span class="contact-icon">📞</span> {c['phone']}
+    </div>
+    """, unsafe_allow_html=True)
 
-    # Contact info
-    st.markdown(f"📧 {content['email']} &nbsp;&nbsp; 📞 {content['phone']}")
-    st.markdown(content["location"])
+    # Socials
+    st.markdown("<br>", unsafe_allow_html=True)
+    cols_social = st.columns(len(SOCIAL_MEDIA))
+    for i, (platform, link) in enumerate(SOCIAL_MEDIA.items()):
+        with cols_social[i]:
+            st.markdown(f"[{platform}]({link})")
+    
+    # 4. Key Qualities (Bubbles)
+    st.markdown("<br>", unsafe_allow_html=True)
+    st.markdown(f"## {c['qualities_header']}")
+    
+    bubbles_html = '<div class="qualities-container">'
+    for quality in c['qualities_bubbles']:
+        bubbles_html += f'<div class="quality-bubble">{quality}</div>'
+    bubbles_html += '</div>'
+    st.markdown(bubbles_html, unsafe_allow_html=True)
 
-    # Download buttons
-    btn_col1, btn_col2, btn_col3 = st.columns(3)
-    with btn_col1:
+    # 5. Download Buttons (Showing BOTH languages)
+    st.markdown("<br>", unsafe_allow_html=True)
+    st.markdown(f"## {c['downloads_header']}")
+    
+    dl_col1, dl_col2 = st.columns(2)
+    with dl_col1:
         if cv_ru_bytes:
             st.download_button(
-                label="📄 CV (RU)",
+                label="📄 RU PDF",
                 data=cv_ru_bytes,
                 file_name="Alabetutu_CV_RU.pdf",
                 mime="application/pdf",
-                key="dl_ru",
+                key="btn_ru"
             )
-    with btn_col2:
+    with dl_col2:
         if cv_en_bytes:
             st.download_button(
-                label="📄 CV (EN)",
+                label="📄 EN PDF",
                 data=cv_en_bytes,
                 file_name="Alabetutu_CV_EN.pdf",
                 mime="application/pdf",
-                key="dl_en",
+                key="btn_en"
             )
 
-st.markdown("</div>", unsafe_allow_html=True)
 
-# --- SOCIAL LINKS ---
-st.markdown("---")
-cols = st.columns(len(SOCIAL_MEDIA))
-for idx, (platform, link) in enumerate(SOCIAL_MEDIA.items()):
-    with cols[idx]:
-        st.markdown(f"[🔗 {platform}]({link})")
+# --- RIGHT COLUMN (Main Content from the image) ---
+with col_right:
+    
+    # 1. Profile / About
+    st.markdown(f"## {c['profile_header']}")
+    st.markdown('<div class="section-line"></div>', unsafe_allow_html=True)
+    st.markdown(c['description'])
+    
+    # 2. Skills (Progress Bars)
+    st.markdown(f"## {c['skills_header']}")
+    st.markdown('<div class="section-line"></div>', unsafe_allow_html=True)
+    
+    # Split skills into 2 small columns for better density
+    s_col1, s_col2 = st.columns(2)
+    for i, skill in enumerate(c['tech_skills']):
+        col = s_col1 if i % 2 == 0 else s_col2
+        with col:
+            st.markdown(f"""
+            <div class="skill-container">
+                <div class="skill-label">
+                    <span>{skill['name']}</span>
+                </div>
+                <div class="progress-bg">
+                    <div class="progress-fill" style="width: {skill['level']}%;"></div>
+                </div>
+            </div>
+            """, unsafe_allow_html=True)
 
-# --- KEY QUALIFICATIONS ---
-st.markdown("---")
-st.markdown(f"## {content['qualifications_header']}")
-qual_cols = st.columns(2)
-for idx, qual in enumerate(content["qualifications"]):
-    with qual_cols[idx % 2]:
-        st.markdown(qual)
+    # 3. Work Experience (Timeline)
+    st.markdown(f"## {c['work_header']}")
+    st.markdown('<div class="section-line"></div>', unsafe_allow_html=True)
+    
+    for job in c['experience']:
+        st.markdown(f"""
+        <div class="timeline-block">
+            <div class="timeline-dot"></div>
+            <span class="date-range">{job['period']}</span>
+            <div class="role-title">{job['role']}</div>
+            <div class="company-name">@ {job['company']}</div>
+            <p>{job['desc']}</p>
+        </div>
+        """, unsafe_allow_html=True)
 
-# --- AI/ML EXPERIENCE ---
-st.markdown("---")
-st.markdown(f"## {content['ai_experience_header']}")
-
-for exp in content["experience"][:2]:  # First 2 are AI-related
-    with st.container():
-        st.markdown(f"### {exp['company']}")
-        st.markdown(f"**{exp['role']}** | *{exp['period']}*")
-        for task in exp["tasks"]:
-            st.markdown(f"- {task}")
-        st.markdown("")
-
-# --- TRANSLATION EXPERIENCE ---
-st.markdown("---")
-st.markdown(f"## {content['translation_header']}")
-
-exp = content["experience"][2]  # Translation experience
-st.markdown(f"### {exp['company']}")
-st.markdown(f"**{exp['role']}** | *{exp['period']}*")
-
-volume_header = "Объём выполненных работ:" if lang == "ru" else "Volume of Work Completed:"
-st.markdown(f"**{volume_header}**")
-for task in exp["tasks"]:
-    st.markdown(f"- {task}")
-
-# --- TEACHING EXPERIENCE ---
-st.markdown("---")
-st.markdown(f"## {content['teaching_header']}")
-
-years_text = "9+ лет опыта" if lang == "ru" else "9+ years of experience"
-st.markdown(f"*{years_text}*")
-
-for teaching in content["teaching_experience"]:
-    col_t1, col_t2 = st.columns([3, 1])
-    with col_t1:
-        st.markdown(f"**{teaching['school']}** — {teaching['role']}")
-    with col_t2:
-        st.markdown(f"*{teaching['period']}*")
-
-# --- EDUCATION ---
-st.markdown("---")
-st.markdown(f"## {content['education_header']}")
-
-for edu in content["education"]:
-    col_e1, col_e2 = st.columns([3, 1])
-    with col_e1:
-        st.markdown(f"**{edu['degree']}**")
-        st.markdown(f"*{edu['school']}*")
-    with col_e2:
-        st.markdown(f"**{edu['year']}**")
-    st.markdown("")
-
-# --- SKILLS ---
-st.markdown("---")
-st.markdown(f"## {content['skills_header']}")
-
-skill_col1, skill_col2 = st.columns(2)
-
-with skill_col1:
-    st.markdown(f"### {content['languages']['header']}")
-    for item in content["languages"]["items"]:
-        st.markdown(f"- {item}")
-
-with skill_col2:
-    st.markdown(f"### {content['tech_skills']['header']}")
-    for item in content["tech_skills"]["items"]:
-        st.markdown(item)
-
-# --- CERTIFICATIONS ---
-st.markdown("---")
-st.markdown(f"## {content['certifications_header']}")
-
-cert_cols = st.columns(2)
-for idx, cert in enumerate(content["certifications"]):
-    with cert_cols[idx % 2]:
-        st.markdown(f"🏆 {cert}")
-
-# --- ADDITIONAL INFO ---
-st.markdown("---")
-st.markdown(f"## {content['additional_header']}")
-
-for info in content["additional_info"]:
-    st.markdown(info)
+    # 4. Education
+    st.markdown(f"## {c['education_header']}")
+    st.markdown('<div class="section-line"></div>', unsafe_allow_html=True)
+    
+    for edu in c['education']:
+        st.markdown(f"""
+        <div class="timeline-block" style="border:none; padding-bottom:0;">
+            <div class="timeline-dot" style="background:#6b7280;"></div>
+            <span class="date-range" style="color:#6b7280;">{edu['year']}</span>
+            <div class="role-title">{edu['degree']}</div>
+            <div class="company-name">{edu['school']}</div>
+        </div>
+        """, unsafe_allow_html=True)
 
 # --- FOOTER ---
 st.markdown("---")
-footer_text = (
-    "© 2024 Ayanfeoluwa Alabetutu | Сделано с ❤️ на Streamlit"
-    if lang == "ru"
-    else "© 2024 Ayanfeoluwa Alabetutu | Made with ❤️ using Streamlit"
+st.markdown(
+    "<center><p style='font-size:0.8rem; color:#aaa;'>Designed with Streamlit & CSS</p></center>", 
+    unsafe_allow_html=True
 )
-st.markdown(f"<p style='text-align: center; color: #888;'>{footer_text}</p>", unsafe_allow_html=True)

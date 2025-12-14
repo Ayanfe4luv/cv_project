@@ -301,7 +301,7 @@ CONTENT = {
 SOCIAL_MEDIA = {
     "LinkedIn": "https://linkedin.com/in/ayanfe4luv",
     "HH.ru": "https://novosibirsk.hh.ru/resume/7f1ad8a2ff0b7437110039ed1f706d57796333",
-    "GitHub": "https://github.com",
+    "GitHub": "https://github.com/Ayanfe4luv/cv_project",
 }
 
 # --- PAGE CONFIG ---

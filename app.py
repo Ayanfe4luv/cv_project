@@ -60,7 +60,7 @@ CONTENT = {
             {
                 "degree": "Ph.D. Кандидат наук",
                 "school": "ФИЦ ФТМ, Новосибирск",
-                "year": "2027 (Ожидается)"
+                "year": "2022"
             },
             {
                 "degree": "Data Science",
@@ -117,9 +117,9 @@ CONTENT = {
         ],
         "education": [
             {
-                "degree": "Ph.D. Candidate",
+                "degree": "Ph.D. ",
                 "school": "FRC FTM, Novosibirsk",
-                "year": "Exp. 2027"
+                "year": " 2022"
             },
             {
                 "degree": "Data Science",
